@@ -197,6 +197,7 @@ static void debug_delay_loop(void)
 			start = cputime();
 			loop_for(delay, 0);
 			end = cputime();
+			printf("current cycles_ms: %d\n", cycles_ms);
 			printf("%6.4fs: looped for %10.8fs, delta=%11.8fs, error=%7.4f%%\n",
 			       delay,
 			       end - start,
