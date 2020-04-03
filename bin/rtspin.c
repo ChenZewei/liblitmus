@@ -194,7 +194,7 @@ static void debug_delay_loop(void)
 	printf("current cycles_ms: %d\n", cycles_ms);
 	while (1) {
 		// for (delay = 0.5; delay > 0.01; delay -= 0.01) {
-		delay = 0.02;
+		delay = 0.005;
 		{
 			start = cputime();
 			loop_for(delay, 0);
