@@ -205,7 +205,7 @@ static void debug_delay_loop(void)
 			       end - start,
 			       end - start - delay,
 			       100 * (end - start - delay) / delay);
-			if (abs(100 * (end - start - delay) / delay)>1)
+			if (abs(100 * (end - start - delay) / delay)>10)
 				exit(0);
 		}
 	}
